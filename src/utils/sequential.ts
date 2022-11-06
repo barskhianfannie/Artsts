@@ -12,10 +12,13 @@ export function createModel(addSigmoid?:boolean) {
   // Add an output layer
   model.add(tf.layers.dense({units: 1, useBias: true}));
 
+  // TODO - Add a Sigmoid Activation Function.
+
+  // TODO - Add a RELU Activation Function. 
+
 
   return model;
 }
-
 
 /**
  * Convert the input data to tensors that we can use for machine
@@ -24,7 +27,6 @@ export function createModel(addSigmoid?:boolean) {
  export function convertToTensor(data:pts) {
   // Wrapping these calculations in a tidy will dispose any
   // intermediate tensors.
-
   return tf.tidy(() => {
     // Step 1. Shuffle the data
     tf.util.shuffle(data);
@@ -71,11 +73,6 @@ export function createModel(addSigmoid?:boolean) {
       batchSize,
       epochs,
       shuffle: true,
-    //   callbacks: tfvis.show.fitCallbacks(
-    //     { name: 'Training Performance' },
-    //     ['loss', 'mse'],
-    //     { height: 200, callbacks: ['onEpochEnd'] }
-    //   )
     });
   }
 
