@@ -116,7 +116,9 @@ return (<>
           </>
           )
   }else{
-          return (<>
+          return (<div style={{            justifyContent: "center",
+          justifyItems:'center',
+          display: "block"}}>
             <h3
             style={{
               fontFamily: "sans-serif",
@@ -158,7 +160,7 @@ return (<>
             justifyContent: "center",
             display: "flex",
             paddingTop: "20px",}}>ETH Price vs. Volume Model Predictions</h5>
-    <ScatterChart width={800} height={350}   margin={{ top: 20, right: 20, bottom: 10, left: 10 }} title={'Sequential Model Prediction Curve for ETH Price Difference vs. Volume Difference'}>
+    <ScatterChart style={{ display:'flex',justifyContent:'center', alignItems:'center', paddingLeft:'200px'}} width={800} height={350}   margin={{ top: 20, right: 20, bottom: 10, left: 10 }} title={'Sequential Model Prediction Curve for ETH Price Difference vs. Volume Difference'}>
     <CartesianGrid strokeDasharray="3 3" />
             <XAxis  type="number" dataKey="x" name="Volume Difference"  unit=' dollars'/>
             <YAxis type="number" dataKey="y" name="Price Difference" unit=' dollars' />
@@ -167,12 +169,12 @@ return (<>
             <ZAxis   />
 
             <Tooltip cursor={{ strokeDasharray: '3 3' }}  />
-  <Legend />
+  <Legend style={{justifyContent:'center', alignItems:'center',display:'flex'}}/>
         </ScatterChart>
         </div>
 }
 </div>
-</>
+</div>
   )}
 }
 

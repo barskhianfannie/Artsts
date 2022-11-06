@@ -87,7 +87,7 @@ export const Landing = () => {
               alignItems:'center'
             }}
           >
-            {!duneQ ?  'Run Query' : executionId ? 'Query Results Fetched. Cleaning the Data.....' : 'Running Query.....'}
+            {!duneQ ?  'Run Query' : executionId ? 'Query Results Fetched. Cleaning the data.' : 'Running Query.....'}
           </button>
         </div>
         <p  style={{display:'flex', justifyContent:'center', paddingBottom:'10px'}}>Powered by  <Image alt={'dune'} width={20} height={20} src={dune} style={{paddingLeft:'10px', paddingRight:'10px'}}/>  API.</p>
