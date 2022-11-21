@@ -12,7 +12,7 @@ import {
   ZAxis,
 } from "recharts";
 import { Sequential } from "../Models/Linear";
-import eth from "../Landing/images/eth.gif";
+import eth from "../../../public/eth.gif";
 
 export type Response = {
   price: number;

@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { useDuneStatus } from "../../hooks/useDune";
 import { DuneResults } from "../Results";
 import { duneFetcher } from "../../utils/dune";
-import etheye from "./images/etheye.gif";
-import wizard from "./images/wizard.png";
-import dune from "./images/dune.png";
-import charts from "./images/charts.gif";
+import etheye from "../../../public/etheye.gif";
+import wizard from "../../../public/wizard.png";
+import dune from "../../../public/dune.png";
+import charts from "../../../public/charts.gif";
 
 import Image from "next/image";
 
