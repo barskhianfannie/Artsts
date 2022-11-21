@@ -3,14 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build": " next build",
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@cloudflare/pages-plugin-cloudflare-access": "^1.0.1",
+    "@cloudflare/pages-plugin-sentry": "^1.0.0",
     "@rainbow-me/rainbowkit": "^0.7.4",
-
     "@tensorflow/tfjs": "^4.0.0",
     "@tensorflow/tfjs-core": "^4.0.0",
     "@tensorflow/tfjs-vis": "^1.5.1",
@@ -21,6 +22,7 @@
     "eslint": "8.26.0",
     "eslint-config-next": "13.0.2",
     "ethers": "^5.6.9",
+    "itty-router": "^2.6.6",
     "next": "13.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
