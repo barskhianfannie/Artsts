@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Landing } from "../components/Landing/index";
+import { Landing } from "../../components/Landing";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {

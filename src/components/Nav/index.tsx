@@ -1,10 +1,6 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import  Image  from 'next/image';
-import wizard from '../Landing/images/wizard.png'
+import wizard from '../../../public/wizard.png'
 
 
 function NavBar() {

@@ -1,6 +1,8 @@
 
 import { createModel, convertToTensor, trainModel, testModel } from '../../../utils/sequential';
 import { pts, Response } from '../../Results';
+
+
 export const Sequential = async ({data}:{data:Response[]})=>{
   const values= data.map(d => ({
     x: d.volumeChange,
